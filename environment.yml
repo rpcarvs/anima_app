@@ -114,4 +114,4 @@ dependencies:
       - tzdata==2025.2
       - urllib3==2.4.0
       - yacs==0.1.8
-      - git+https://github.com/rpcarvs/anima.git@main#egg=anima
+      - "--editable=git+https://github.com/rpcarvs/anima.git@main#egg=anima"
