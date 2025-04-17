@@ -159,8 +159,8 @@ with st.container(border=False):
         with st.container(border=True):
             st.write(f"**Molecule after preparation:** {new_molecule}")
             st.write(f"**Lithium insertion potential:** $${{\color{{green}}{round(float(li_voltage), 3)}}} \\textrm{{ V v.s. Li/Li}}^+$$")
-            st.write(f"**Oxidation potential:** $${{\color{{red}}{round(float(oxidation), 3)}}} \\textrm{{ V (ref to vacuum)}}$$")
-            st.write(f"**Reduction potential:** $${{\color{{blue}}{round(float(reduction), 3)}}} \\textrm{{ V (ref to vacuum)}}$$")
+            st.write(f"**Molecule oxidation potential:** $${{\color{{red}}{round(float(oxidation), 3)}}} \\textrm{{ V (ref to vacuum)}}$$")
+            st.write(f"**Molecule reduction potential:** $${{\color{{blue}}{round(float(reduction), 3)}}} \\textrm{{ V (ref to vacuum)}}$$")
 
             m = Chem.MolFromSmiles(new_molecule)
             fig = Draw.MolToImage(m)
