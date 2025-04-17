@@ -1,8 +1,9 @@
 import streamlit as st
-from anima.models import AIkernel
 from rdkit import Chem
 from rdkit.Chem import Draw
 from st_social_media_links import SocialMediaIcons
+
+from anima.models import AIkernel
 
 with st.sidebar.container(border=False):
     st.sidebar.markdown(
@@ -132,10 +133,10 @@ with st.container(border=False):
         predict = st.button("Predict!")
 
     @st.cache_data
-    def run_model(smile):
+    def run_model(smiles):
         try:
             result = AIkernel(
-                [smile],
+                [smiles],
                 return_redox=True,
                 return_smiles=True,
             )
