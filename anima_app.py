@@ -158,9 +158,9 @@ with st.container(border=False):
 
         with st.container(border=True):
             st.write(f"**Molecule after preparation:** {new_molecule}")
-            st.write(f"**Insertion potential:** $${{\color{{green}}{round(li_voltage, 2)}}} \\textrm{{ V v.s. Li/Li}}^+$$")
-            st.write(f"**Oxidation potential:** $${{\color{{red}}{round(oxidation, 2)}}} \\textrm{{ V (ref to vacuum)}}^+$$")
-            st.write(f"**Reduction potential:** $${{\color{{blue}}{round(reduction, 2)}}} \\textrm{{ V (ref to vacuum)}}^+$$")
+            st.write(f"**Insertion potential:** $${{\color{{green}}{round(float(li_voltage), 2)}}} \\textrm{{ V v.s. Li/Li}}^+$$")
+            st.write(f"**Oxidation potential:** $${{\color{{red}}{round(float(oxidation), 2)}}} \\textrm{{ V (ref to vacuum)}}$$")
+            st.write(f"**Reduction potential:** $${{\color{{blue}}{round(float(reduction), 2)}}} \\textrm{{ V (ref to vacuum)}}$$")
 
             m = Chem.MolFromSmiles(new_molecule)
             fig = Draw.MolToImage(m)
