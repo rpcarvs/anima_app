@@ -141,6 +141,7 @@ with st.container(border=False):
                 return_smiles=True,
             )
         except Exception:
+            result = {}
             st.write("Ops! It seems you have intered an invalid SMILES")
 
         return result
