@@ -1,5 +1,5 @@
 import streamlit as st
-from anima.models import AIkernel
+from anima.ai_kernel import AIkernel
 from rdkit import Chem
 from rdkit.Chem import Draw
 
