@@ -1,5 +1,5 @@
 altair==5.5.0
-anima@git+https://github.com/rpcarvs/anima.git@app#egg=anima
+anima@git+https://github.com/rpcarvs/anima.git
 attrs==25.3.0
 beautifulsoup4==4.13.4
 blinker==1.9.0
