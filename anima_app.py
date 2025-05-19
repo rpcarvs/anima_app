@@ -49,13 +49,22 @@ Predict!
         unsafe_allow_html=True,
     )
     st.subheader("Predicitons", divider=True, anchor="pred")
-
+    # O=CC(=O)C(=O)N=C1C(C(=O)C=O)=CN=C1Br
+    # N=c1sc2c(C(=O)C(=O)C=O)nc(=O)c=2c1=O
     st.markdown("""Add your SMILES and press **'Predict!**'""")
+    st.markdown("""Some suggestions:
+
+- O=CC(=O)C(=O)N=C1C(C(=O)C=O)=CN=C1Br
+- N=c1sc2c(C(=O)C(=O)C=O)nc(=O)c=2c1=O
+- BrC1=C2C(=O)N=Cc3c2n2C(O1)NC(=N)c2c3
+
+ The max SMILES length is 54 elements.
+""")
 
     col1, col2 = st.columns([0.7, 0.3], vertical_alignment="bottom")
     with col1:
         molecule = st.text_input(
-            "SMILES",
+            "**SMILES**",
             value="C1=CC(=CC=C1C(=O)O)C(=O)O",
         )
     with col2:
